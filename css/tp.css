@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#3f187c,#a38ed8,#fff);
+   
+}
+header,#article ,#video,#tableau,#galerie,#inscription{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #a38ed8;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height:9% ;
+    z-index: 3;
+}
+
+header .navigation nav{
+    flex: 1;
+    text-align: right;
+}
+
+.menu-logo{
+    margin-left: 3%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+header a{
+    color: lavender;
+    text-decoration: none;
+    width:15%;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+}
+header a:hover{
+    background-color: lavender;
+    color: #3f187c;
+    transition: 0.3s all linear;
+    border-radius: 20px; 
+    cursor: pointer;
+}
+.acceuil{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 10%;
+    margin-top: 9%;
+   
+}
+.acceuil h1 {
+    color: #fff;
+    font-size: 70px;
+    font-family:nasa ;
+
+}
+.acceuil h2{
+    color: #fff;
+    margin-bottom: 2%;
+}
+.acceuil p{
+    color: #a38ed8;
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+/*ARTICLE*/
+
+.lune{
+    position:relative;
+    bottom:  10%;
+    left: 40%;
+}
+
+#article{
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+#article section{
+    padding-top: 9%;
+    width: 600px;
+   
+}
+#article article{
+    padding: 3%;
+}
+
+
+#article img{
+    width: 100px;
+    height: 100px;
+}
+#article p{
+    padding-top: 2%;
+    font-size:larger;
+    font-weight: lighter;
+    color:lavender ;
+}
+#article h2{
+    color: #fff;
+    background-color: #421360;
+    
+}
+
+/*VIDEO*/
+
+#video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#video>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#video>div>figure{
+   margin-top: 0px;
+}
+#video figure{
+    flex: 0  0  40%;
+    border-radius: 5px;
+}
+iframe{
+    border-radius: 60px;
+}
+/*TABLEAU*/
+
+#tableau{
+    display: flex;
+    
+}
+table{
+    
+    width: 950px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center; 
+    background:linear-gradient(#aa87e6,#421360);
+}	
+table caption{
+    color: #fff;
+}
+  
+th, td{
+    border : 1px solid white;
+    height: 80px;
+}
+th{
+  width: 130px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(64, 64, 64);
+}
+td{
+    color: #fff;
+    font-size:small;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* GALERIE DE PHOTO*/
+#galerie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.col{
+    display:block;
+   
+}
+
+.photo{
+    width: 100px;
+    height: 130px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 35px 35px;
+    margin: 5%;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+}
+.photo1{
+    background-image: url("../images/backgroundmoon.jpg");
+}
+.photo2{
+    background-image: url("../images/lune_gibbeuse_croissante.png");
+}
+.photo3{
+    background-image: url("../images/PREMIER_QUARTIER.png");
+}
+.photo4{
+    background-image: url("../images/PREMIER_CROISSANT.png");
+}
+.photo5{
+    background-image: url("../images/nouvelle_lune.png");
+}
+.photo6{
+    background-image: url("../images/DERNIER_CROISSANT.png");
+}
+.photo7{
+    background-image: url("../images/DERNIER_QUARTIER.png");
+}
+.photo8{
+    background-image: url("../images/lune_gibbeuse_decroissante.png");
+}
+
+
+
+/* PAGE D'INSCRIPTION */
+
+#inscription{
+    background-image:url(../images/backgroundmoon.jpg) ;
+    background-size: cover;
+}
+
+#inscription .inscript{
+    padding:10% ;
+
+}
+
+#inscription h1,p{
+    color: white;
+   
+}
+#identification input{
+    background-color: #42136099;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+#identification input:hover{
+  background-color: #ffffff;
+}
+#identification input::placeholder{
+    color: white;
+}
+#identification{
+    width: 250px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: rgba(227, 186, 255, 0.51);
+    color: #6629a8;
+    font-weight:lighter ;
+}
+
+/* BAS DE PAGE */
+
+footer{
+    width: 100%;
+    height: 50vh;
+    color: white;
+    background-color: black;
+}
+.conteneur{
+    width: 990px;
+    margin:0 auto;
+    background-color: #6a199c8f;
+}
+footer ul{
+    list-style: none;
+    
+}
+footer p{
+    font-weight: lighter;
+    color: lavender;
+}
+footer a{
+    color: lavender;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.footer-colonne{
+    width: 20%;
+    padding: 2%;
+}
+.footer-colonne h4{
+    font-size: small;
+    margin-bottom: 25px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-colonne ul li a:hover{
+    color: rgb(127, 157, 255);
+    padding-left: 15px;
+}
+
+
